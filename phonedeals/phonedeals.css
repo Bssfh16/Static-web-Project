@@ -413,8 +413,13 @@ footer {
 }
 
 .reviewcard .sterren {
-    display: none;
+    color: #d1ad1d;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    line-height: 1;
 }
+
 
 .reviewcard h3 {
     font-size: 1.1rem;
