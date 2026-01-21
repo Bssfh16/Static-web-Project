@@ -1,27 +1,277 @@
 :root {
     --achtergrondkleur: #f0f0f0; 
-    --kaartkleur: #ffffff;
-    --tekstkleur: #2e2e2e;
+    --wit: #ffffff;
+    --grijs: #2e2e2e;
     --rood: #ce0101;
     --zwart: #000000; 
 }
 
 body {
     background-color: var(--achtergrondkleur);
-    color: var(--tekstkleur);
+    color: var(--grijs);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1.6;
 }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
 a {
     text-decoration: none;
 }
 
+.header {
+    background-color: var(--zwart);
+    padding: 15px 0;
+}
+
+.inhoudheader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 50px;     
+    box-sizing: border-box;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    text-decoration: none;
+    color: var(--wit)
+}
+
+.logo:visited {
+    color: var(--wit);
+}
+
+.afbeeldinglogo {
+    height: 45px;
+    width: auto;
+    display: block;
+}
+
+.tekstlogo {
+    font-size: 1.5rem;      
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+.navigatie ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 30px;
+}
+
+.navigatie a {
+    color: #cccccc;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.navigatie a:hover {
+    color: #808080;
+}
+
+.intro {
+    background-color: var(--wit);
+    text-align: center;
+    padding: 60px 20px;
+    margin-bottom: 50px;
+    border-bottom: 1px solid #ddd;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.intro h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: var(--zwart);
+}
+
+.intro p {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 10px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.knop-topdeals {
+    display: inline-block;
+    background-color: var(--rood);
+    color: var(--wit);
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s;
+    margin-top: 20px;
+}
+
+.knop-topdeals:hover {
+    background-color: #a10101;
+}
+
+section {
+    padding-bottom: 60px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.productgrid {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); 
+    gap: 40px;
+}
+
+.productcard {
+    background: var(--wit);
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+    text-align: center;
+    padding-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.productcard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.productcard img {
+    width: 80%;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+
+.nieuw {
+    position: absolute;
+    top: 15px;
+    left: 0;
+    background-color: var(--rood);
+    color: var(--wit);
+    padding: 5px 15px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    z-index: 10;
+}
+
+.productinfo h3 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    margin-top: 40px;
+}
+
+.versie {
+    color: #808080;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+.prijs {
+    font-size: 1.3rem;
+    color: var(--rood);
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.knop-details {
+    display: inline-block;
+    background-color: var(--zwart);
+    color: var(--wit);
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    transition: background 0.3s;
+}
+
+.knop-details:hover {
+    background-color: #444;
+}
+
+.merk {
+    margin-bottom: 60px;
+    margin-top: 5px;
+}
+
+.merk-naam {
+    border-bottom: 2px solid var(--zwart);
+    display: inline-block;
+    padding-bottom: 5px;
+    margin-bottom: 30px;
+    margin-left: 10px;
+}
+
+.merk h3 {
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: var(--zwart);
+    color: #cccccc;
+    padding: 20px 0;
+    margin-top: 50px;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.inhoud-footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.deel-footer h3, 
+.deel-footer h4 {
+    color: var(--wit);
+    border-bottom: 1px solid var(--wit);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.contactgegevens, .openingstijden {
+    list-style: none;
+    padding: 0;
+    line-height: 2;
+}
+
+.contactgegevens a {
+    color: #cccccc;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.deel-footer p, 
+.deel-footer ul, 
+.deel-footer li {
+    color: #cccccc;
+    margin-bottom: 8px;
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 2px;  
+    margin-top: 0;           
+}
