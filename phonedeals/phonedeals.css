@@ -1,13 +1,14 @@
 :root {
-    --achtergrondkleur: #f0f0f0; 
     --wit: #ffffff;
     --grijs: #2e2e2e;
     --rood: #ce0101;
-    --zwart: #000000; 
+    --zwart: #000000;
+    --lichtgrijs: #cccccc;
+    --grijs80: #808080;
 }
 
 body {
-    background-color: var(--achtergrondkleur);
+    background-color: #f0f0f0;
     color: var(--grijs);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
@@ -66,13 +67,13 @@ a {
 }
 
 .navigatie a {
-    color: #cccccc;
+    color: var(--lichtgrijs);
     font-weight: 500;
     transition: color 0.3s;
 }
 
 .navigatie a:hover {
-    color: #808080;
+    color: var(--grijs80);
 }
 
 .intro {
@@ -181,7 +182,7 @@ h2 {
 }
 
 .versie {
-    color: #808080;
+    color: var(--grijs80);
     font-size: 0.9rem;
     margin-bottom: 10px;
 }
@@ -227,7 +228,7 @@ h2 {
 
 footer {
     background-color: var(--zwart);
-    color: #cccccc;
+    color: var(--lichtgrijs);
     padding: 20px 0;
     margin-top: 50px;
 }
@@ -260,7 +261,7 @@ footer {
 }
 
 .contactgegevens a {
-    color: #cccccc;
+    color: var(--lichtgrijs);
     text-decoration: none;
     font-size: 1rem;
 }
@@ -268,7 +269,7 @@ footer {
 .deel-footer p, 
 .deel-footer ul, 
 .deel-footer li {
-    color: #cccccc;
+    color: var(--lichtgrijs);
     margin-bottom: 8px;
     font-size: 1rem;
     line-height: 1.8;
