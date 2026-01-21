@@ -1,5 +1,5 @@
 # PhoneDeals
-Dit project hoort bij het vak "Static Web". Er zijn verschillende html-bestanden terug te vinden in de folders. Deze zijn aparte pagina's van een website.
+Dit project hoort bij het vak "Static Web". Er zijn verschillende html- en css-bestanden terug te vinden in de folders. Deze zijn aparte pagina's van een website.
 Het onderwerp van de website is de telefoonverkoop.
 
 # Functionaliteiten
