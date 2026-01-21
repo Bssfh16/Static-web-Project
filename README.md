@@ -28,7 +28,7 @@ Backend:
 - De mogelijkheid krijgen om op deze actieknoppen te kunnen drukken.
 
 # Sterk Aangeraden Benodigdheden
--Visual Studio Code
+- Visual Studio Code
 Extensies op Visual Studio Code:
 - HTML CSS Support
 - Auto Rename Tag
