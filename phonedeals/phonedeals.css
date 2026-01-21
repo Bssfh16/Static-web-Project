@@ -276,3 +276,168 @@ footer {
     margin-bottom: 2px;  
     margin-top: 0;           
 }
+
+
+
+
+
+
+
+
+
+
+
+.introdetail {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: start;
+    background-color: var(--wit);
+    padding: 40px;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.detailfoto {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.detailfoto img:first-child {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.extrafotos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.extrafotos img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.detailinfo h1 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+    color: var(--zwart);
+}
+
+.ondertitel {
+    color: var(--grijs80);
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+.detailinfo .prijs {
+    margin-bottom: 30px;
+}
+
+.newprijs {
+    font-size: 1.8rem;
+    color: var(--rood);
+    font-weight: bold;
+}
+
+.beschrijving {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.8;
+}
+
+.extradetail {
+    background-color: var(--wit);
+    padding: 40px;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.specs {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.specs tr {
+    border-bottom: 1px solid #ddd;
+}
+
+.specs tr:last-child {
+    border-bottom: none;
+}
+
+.specs th {
+    text-align: left;
+    padding: 15px 0;
+    font-weight: bold;
+    color: var(--zwart);
+    width: 40%;
+}
+
+.specs td {
+    padding: 15px 0;
+    color: var(--grijs);
+    padding-left: 20px;
+}
+
+.reviews {
+    background-color: var(--wit);
+    padding: 40px;
+    border-radius: 10px;
+    margin-bottom: 50px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.reviewgrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.reviewcard {
+    background-color: #f9f9f9;
+    padding: 25px;
+    border-radius: 10px;
+    border-left: 4px solid var(--rood);
+    display: flex;
+    flex-direction: column;
+}
+
+.reviewcard .sterren {
+    display: none;
+}
+
+.reviewcard h3 {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: var(--zwart);
+}
+
+.reviewcard p {
+    color: #666;
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.klantnaam {
+    color: var(--grijs80);
+    font-weight: bold;
+    margin-top: auto;
+    font-size: 0.95rem;
+}
+
+.gerelateerd {
+    background-color: var(--wit);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
