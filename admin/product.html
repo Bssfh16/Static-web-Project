@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PhoneDeals Admin - Productenbeheer</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+
+<body class="admin-body">
+
+    <header class="admin-header">
+        <div class="inhoud-header">
+            <h1>PhoneDeals Admin</h1>
+            <div class="useradmin">
+                <span>Admin</span>
+                <a href="login.html" class="knop-uitloggen">Uitloggen</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="container-admin">
+        <nav class="admin-nav">
+            <ul>
+                <li><a href="admin.html">Dashboard</a></li>
+                <li><a href="product.html">Productenbeheer</a></li>
+            </ul>
+        </nav>
+
+        <main class="admin-main">
+            <section class="deel-admin">
+                <h2>Product Toevoegen</h2>
+
+                <form class="form">
+                    <div class="formrij">
+                        <div class="formgroep">
+                            <label for="productnaam">Productnaam</label>
+                            <input type="text" id="productnaam" name="productnaam" required>
+                        </div>
+
+                        <div class="formgroep">
+                            <label for="merk">Merk</label>
+                            <select id="merk" name="merk" required>
+                                <option value="">- Selecteer merk -</option>
+                                <option value="apple">Apple</option>
+                                <option value="samsung">Samsung</option>
+                                <option value="google">Google</option>
+                                <option value="oppo">Oppo</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="formrij">
+                        <div class="formgroep">
+                            <label for="prijs">Prijs (€)</label>
+                            <input type="number" id="prijs" name="prijs" step="0.01" required>
+                        </div>
+
+                        <div class="formgroep">
+                            <label for="opslag">Opslagcapaciteit (GB)</label>
+                            <input type="number" id="opslag" name="opslag" required>
+                        </div>
+                    </div>
+
+                    <div class="formrij">
+                        <div class="formgroep">
+                            <label for="kleur">Kleur *</label>
+                            <input type="text" id="kleur" name="kleur" required>
+                        </div>
+
+                        <div class="formgroep">
+                            <label for="voorraad">Voorraadstatus</label>
+                            <select id="voorraad" name="voorraad" required>
+                                <option value="">- Selecteer status -</option>
+                                <option value="beschikbaar">Beschikbaar</option>
+                                <option value="beperkt">Beperkt</option>
+                                <option value="uitverkocht">Uitverkocht</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="formgroep full">
+                        <label for="beschrijving">Beschrijving</label>
+                        <textarea id="beschrijving" name="beschrijving" rows="5" required></textarea>
+                    </div>
+
+                    <div class="formrij">
+                        <div class="formgroep checkboxgroep">
+                            <label>
+                                <input type="checkbox" name="featured"> 
+                                Top Deal
+                            </label>
+                        </div>
+
+                        <div class="formgroep checkboxgroep">
+                            <label>
+                                <input type="checkbox" name="nieuw"> 
+                                Nieuw Product
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="formactie">
+                        <button type="submit" class="knop1">Opslaan</button>
+                        <a href="admin.html" class="knop2">Annuleren</a>
+                    </div>
+                </form>
+            </section>
+        </main>
+    </div>
+
+</body>
+</html>
