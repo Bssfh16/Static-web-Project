@@ -131,7 +131,7 @@ h2 {
     list-style: none;
     padding: 0;
     display: flex;
-    gap: 40px;
+    gap: 20px;
     flex-wrap: wrap;
 }
 
@@ -145,8 +145,13 @@ h2 {
     text-align: center;
     padding-bottom: 20px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-    flex: 1 1 260px;
+    flex: 0 0 260px;
     min-width: 260px;
+    min-height: 400px;
+}
+
+.merk .productcard {
+    flex: 1 1 260px;
 }
 
 .productcard:hover {
@@ -452,4 +457,64 @@ footer {
     padding: 40px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+
+
+
+@media (max-width: 800px) {
+    .inhoudheader {
+        flex-direction: column;
+        gap: 15px;
+        padding: 0 20px;
+    }
+
+    .navigatie ul {
+        gap: 15px;
+    }
+
+    .productcard {
+        flex: 1 1 220px;
+        min-width: 220px;
+        max-width: 260px;
+    }
+
+    .introdetail {
+        flex-direction: column;
+    }
+
+    .extrafotos {
+        flex-wrap: wrap;
+    }
+
+    .extrafotos img {
+        flex: 1 1 calc(50% - 8px);
+        min-width: calc(50% - 8px);
+    }
+
+    .reviewcard {
+        flex: 1 1 280px;
+        min-width: 280px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .detailinfo h1 {
+        font-size: 1.8rem;
+    }
+
+    .intro {
+        padding: 40px 20px;
+    }
+
+    .intro h1 {
+        font-size: 2rem;
+    }
+
+    .inhoud-footer {
+        flex-direction: column;
+        gap: 25px;
+    }
 }
