@@ -10,7 +10,8 @@
 body {
     background-color: #f0f0f0;
     color: var(--grijs);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "Lexend", sans-serif; 
+    font-weight: 300;
     margin: 0;
     padding: 0;
     line-height: 1.6;
@@ -531,4 +532,17 @@ De breakpoint is 800px
         flex-direction: column;
         gap: 25px;
     }
+}
+
+
+
+
+
+/* Google Font voor h1, h2*/
+
+h1, h2 {
+    font-family: "Sigmar One", cursive;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 1px;
 }
